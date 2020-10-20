@@ -1,6 +1,6 @@
 module Bang
 
-export bang
+export @bang
 
 macro bang(f, args...) Expr(:call, f, args...) end
 
