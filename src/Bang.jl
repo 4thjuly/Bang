@@ -1,7 +1,7 @@
 module Bang
 
-export !
+export __Bang__
 
-macro !(f, args...) Expr(:call, f, args...) end
+macro __Bang__(f, args...) Expr(:call, f, args...) end
 
 end # module
